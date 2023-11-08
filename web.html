@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>pf</title>
+
+        <link rel="icon" href="favicon.ico">
+
+        <!-- css -->
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+        
+
+        
+     
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-logo">
+                    <h1><a href="index.html"><img src="img/square_logo.png" id="logo"></a></h1>
+                </div>
+                
+                <!-- ハンバーガーメニューボタン -->
+                <div class="toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="sp-menu menu">
+                    <ul>
+                        <li><a href="print.html">PRINT</a></li>
+                        <li><a href="web.html">WEB</a></li>
+                        <li><a href="index.html#gallery">GALLERY</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="pc-menu menu-left menu">
+                    <ul>
+                        <li><a href="print.html">PRINT</a></li>
+                        <li><a href="web.html">WEB</a></li>
+                        <li><a href="index.html#gallery">GALLERY</a></li>
+                    </ul>
+                </nav>
+
+                
+            </div>
+        </header> 
+        
+        <main>
+
+           <div class="web">
+            <div class="web-img"><img src="img/web/web.png"></div>
+            <p>WEB PORTFOLIO▼</p>
+           </div>
+
+           <div class="web-gallery">
+            <div class="flex-container">
+                <div class="cover-box">
+                    <img class="circle" src="img/web/img1.png"> 
+                    <div class="dark-cover">
+                        <p><a href="http://cf557957.cloudfree.jp/ " target="_blank">ハンバーガー店のサイト</a></p>
+                    </div>
+                    
+                </div>
+                <div class="cover-box">
+                    <img class="circle" src="img/web/img2.png">
+                    <div class="dark-cover">
+                        <p><a href="http://cpsite2.html.xdomain.jp/" target="_blank">海運会社のコーポレートサイト</a></p>
+                    </div>
+                   
+                </div>
+                <div class="cover-box">
+                    <img class="circle" src="img/web/img3.png">
+                    <div class="dark-cover">
+                        <p><a href="http://cpsite2.php.xdomain.jp/" target="_blank">コスメ会社のWEB兼ECサイト</a></p>
+                    </div>
+                 
+                </div>
+                <div class="cover-box">
+                    <img class="circle" src="img/web/karen.png">
+                    <div class="dark-cover">
+                        <p><a href="https://karen-tee.com/" target="_blank">不動産会社コーポレートサイト</a></p>
+                    </div>
+              
+                </div>
+            </div>
+           </div>
+
+            
+           
+        </main>
+        <footer>
+            <div class="container">
+                <p>Copyright @ 2023</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+ 
+        <script>
+            $(function(){
+　　　　    // ハンバーガーメニューの動作
+                $('.toggle').click(function(){
+                            $("header").toggleClass('open');
+                    $(".sp-menu").slideToggle(500);
+                });    
+            });        
+        </script>
+    
+      
+    </body>
+</html>
