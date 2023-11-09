@@ -81,7 +81,7 @@ header {
 }
 
 
-    /* スマホ用メニューを非表示 */
+
     .sp-menu {
         display: none;
     }
@@ -120,8 +120,8 @@ header {
     background-size: cover;
     background-position: center */
     position: relative;
-    background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);/*グラデーションを定義*/
-	background-size: 200% 200%;/*サイズを大きくひきのばす*/
+    background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);
+	background-size: 200% 200%;
 	animation: bggradient 15s ease infinite;
 }
 
@@ -173,9 +173,13 @@ header {
     color: #fff;
   }
 
-  .item04{ background: #8cc561; }
-  .item05{ background: #56aa59; }
-  .item06{ background: #3d6b35; }
+  .item04{ background:linear-gradient(45deg, #a2c561,#8cc561,#65c561);
+ }
+  .item05{ background:linear-gradient(45deg, #7fd462,#5aa748,#499625);
+}
+  .item06{ background:linear-gradient(45deg, #5fb550,#438139,#2d791f);
+}
+
 
 
    
@@ -189,8 +193,29 @@ header {
 .js-text a{
     color: #fff;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
 }
 /*gallery*/
+
+.dli-chevron-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 1;
+    width: .5em;
+    height: .5em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    margin-left: 20px;
+  }
+
 .gallery-nenga{
     max-width: 980px;
     margin: 0 auto;
@@ -217,6 +242,10 @@ header {
     width: 45%;
     object-fit: contain;
 }
+.img-flex p{
+    font-size: .6rem;
+    text-align: center;
+}
 /* labelベース*/
 .brand-wrapper{
     width: 100%;
@@ -237,13 +266,13 @@ header {
 	padding: 2.5em;
 	display: block;
 	color: #fff;
-	background:rgb(255, 255, 255);
+	background:#fefff4;
 }
 .Label:hover{
     
     cursor: pointer;
 }
-.Label::before{		/*タイトル横の矢印*/
+.Label::before{		
 	content:"";
 	width: 6px;
 	height: 6px;
@@ -269,7 +298,7 @@ header {
 	padding:0 20px;
 	overflow: hidden;
 }
-.gallery-toggle:checked + .Label + .brand-content {	/*開閉時*/
+.gallery-toggle:checked + .Label + .brand-content {	
 	height: auto;
 	padding:10px 20px 20px;
 	transition: all .3s;
@@ -305,7 +334,7 @@ header {
     padding: 20px;
     letter-spacing: 2px;
 }
-.index.fixed{        /* クラスのfixedがついた時 */
+.index.fixed{    
     position: fixed;
     top: 30vh;
     width: 240px;
@@ -315,12 +344,12 @@ header {
     line-height: 2;
 }
 
-.para.active{       /* 目次にクラスactiveがついた時 */
+.para.active{      
     color: rgb(0, 0, 0);
     /*background: rgb(37, 180, 251);*/
     border-radius: 5px;
 }
-.para.active::before{       /* 目次にクラスactiveがついた時 */
+.para.active::before{   
     content:"";
     display: inline-block;
     background:rgb(134, 201, 255);
@@ -378,13 +407,13 @@ header {
     opacity: 0;
     transition: opacity .7s;
   }
-  /* hoverすると2枚目の画像が透明じゃなくなる */
+
   .square:hover img {
     opacity: 1;
   }
 
 .squarelast{
-    height: 300px;
+    height: 600px;
 }
 
 
@@ -496,6 +525,14 @@ footer {
 /*print.html*/
 @media screen and (max-width: 660px) {
 
+    .item{
+        height: 100vh;
+        width: 100%;
+
+        font-size: 50px;
+        font-weight: bold;
+        color: #fff;
+      }
     .midashi{
         background: #fff;
         width: 100%;
