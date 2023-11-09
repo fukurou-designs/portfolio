@@ -556,7 +556,7 @@ footer {
     }
     .index.fixed {
         padding: 0;
-        top: 14vh;
+        top: 20vh;
         position: fixed;
         width: 100%;
         background: #fff;
