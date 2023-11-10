@@ -18,7 +18,7 @@ window.addEventListener("load", function(){
       scrollTrigger: {
         trigger: area, 
         start: "top top", 
-        end: "+=4000", 
+        end: "+=3000", 
         pin: true, 
         scrub: true, 
       }

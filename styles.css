@@ -226,7 +226,7 @@ header {
 }
 .gallery-category{
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto;
     text-align: center;
 }
 .gallery-category img{
@@ -260,7 +260,7 @@ header {
     color: #333;
 }
 .gallery-text:hover{
-    color: #9844b7;
+    color: #5a5a5a;
 }
 .Label {		/*タイトル*/
 	padding: 2.5em;
@@ -291,6 +291,14 @@ header {
 	transform: translateZ(0);
 	transition: all 0.3s;
   
+}
+.brand-content p{
+    font-size: 1rem;
+    padding-bottom: 10px;
+
+}
+.brand-content p a{
+    color:#838383;
 }
 .brand-content {		/*本文*/
 	height: 0;
@@ -522,9 +530,37 @@ footer {
 
 
 
-/*print.html*/
-@media screen and (max-width: 660px) {
 
+@media screen and (max-width: 660px) {
+/*gallery*/
+    .top-text svg {
+        position: absolute;
+        left: 0;
+        top: 155px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery-category img {
+        width: 90%;
+        padding: 0;
+    }
+
+    .gallery-text {
+        font-family: serif;
+        font-size: 1.1rem;
+        color: #333;
+    }
+    
+    .img-flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .img-flex p{
+        font-size: 1rem;
+    }
+    /*print.html*/
     .item{
         height: 100vh;
         width: 100%;
