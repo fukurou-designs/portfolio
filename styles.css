@@ -507,9 +507,10 @@ a.btn_13:hover {
     text-align: center;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    margin: -60px auto 0;
+    margin:0 auto ;
 }
 .web-gallery{
+    padding-top: 96px;
     padding-bottom: 150px;
 }
 .flex-container{
@@ -706,7 +707,7 @@ footer {
     text-align: center;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    margin: -170px auto 0px;
+    margin:0 auto;
 
       }
       .web h2 {
