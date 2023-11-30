@@ -188,6 +188,56 @@ header {
 }
 
 
+.scrolldown1{
+
+  position:absolute;
+  top:75%;
+  right:85px;
+  height:50px;
+  
+}
+
+.scrolldown1 span{
+
+  position: absolute;
+  left:-55px;
+  top: -8px;
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+
+
+.scrolldown1::after{
+  content: "";
+
+  position: absolute;
+  top: 0;
+left: -10px;
+  width: 40px;
+  height: 1px;
+  background: #eee;
+  animation: pathmove 2.5s ease-in-out infinite;
+  opacity:1;
+}
+@keyframes pathmove{
+    0%{
+      width:0;
+
+      opacity: 0;
+    }
+    30%{
+      width:40px;
+      opacity: 1;
+    }
+    100%{
+      width:0;
+
+      opacity: 0;
+    }
+  }
+
 
    
 .js-text{
