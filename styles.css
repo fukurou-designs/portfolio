@@ -569,7 +569,7 @@ a.btn_13:hover {
     margin: 0 auto 30px;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     
 }
 .circle{
