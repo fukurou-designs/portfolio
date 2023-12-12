@@ -127,7 +127,8 @@ header {
     background-size: cover;
     background-position: center */
     position: relative;
-    background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);
+    /*background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);*/
+    background:#333;
 	background-size: 200% 200%;
 	animation: bggradient 15s ease infinite;
 }
@@ -180,13 +181,15 @@ header {
     color: #fff;
   }
 
-  .item04{ background:linear-gradient(45deg, #a2c561,#8cc561,#65c561);
+/*  .item04{ background:linear-gradient(45deg, #a2c561,#8cc561,#65c561);
  }
   .item05{ background:linear-gradient(45deg, #7fd462,#5aa748,#499625);
 }
   .item06{ background:linear-gradient(45deg, #5fb550,#438139,#2d791f);
 }
+*/
 
+.item04, .item05, .item06{ background:#333;}
 
 .scrolldown1{
 
