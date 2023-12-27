@@ -127,8 +127,8 @@ header {
     background-size: cover;
     background-position: center */
     position: relative;
-    /*background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);*/
-    background:#333;
+    background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);
+    /* background:#333; */
 	background-size: 200% 200%;
 	animation: bggradient 15s ease infinite;
 }
@@ -151,11 +151,30 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    color: #fff;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, .95);
     text-align: center;
+    border-radius: 50px;
+    box-shadow: 4px 7px 10px -8px rgba(0, 0, 0, 0.3);
+    line-height: 2;
 }
+.profile p{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
 
+}
+.top-text p{
+    
+ margin: 0;
+}
+.top-text img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
 .top-text svg{
     position:absolute;
     left: 0;
@@ -269,7 +288,40 @@ left: -10px;
 }
 
 /*gallery*/
-
+.compe-nenga img{
+ margin: 0 auto;
+}
+.web-midashi{
+font-family: 'Playfair Display', serif;
+font-size: 1.1rem;
+letter-spacing: 1px;
+margin:0 auto ;
+    background: #c8a753;
+    color: white;
+    padding: 20px;
+    width: 500px;
+}
+.web-midashi2{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin:0 auto ;
+    }
+    
+.gallery h2{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+.gallery p{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin:0 auto ;
+}
 .dli-chevron-down {
     display: inline-block;
     vertical-align: middle;
@@ -292,14 +344,18 @@ left: -10px;
 }
 .compe-nenga{
     padding: 20px;
+    border-radius: 3px;
+    box-shadow: 4px 7px 10px -8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    margin-top: 120px;
 }
 .gallery-category{
     max-width: 1080px;
-    margin: 0 auto 60px auto;
+    margin: 110px auto 0;
     text-align: center;
 }
 .gallery-category img{
-    width: 80%;
+    width: 60%;
     padding: 40px;
    
 }
@@ -318,7 +374,7 @@ left: -10px;
 /* labelベース*/
 .brand-wrapper{
     width: 100%;
-
+    margin-bottom: 300px;
 }
 .gallery-toggle {
 	display: none;
@@ -327,6 +383,8 @@ left: -10px;
     font-family: sans-serif;
     font-size: 1.3rem;
     color: #333;
+    letter-spacing: 0.5px;
+    font-weight: bold;
 }
 .gallery-text:hover{
     color: #5a5a5a;
@@ -460,7 +518,7 @@ a.btn_13:hover {
 }
 .index.fixed{    
     position: fixed;
-    top: 30vh;
+
     width: 240px;
 }
 .index li{
@@ -485,14 +543,12 @@ a.btn_13:hover {
 .novel{
     width: 70%;
     margin-left: 25%;
-    margin-top: 30vh;
+
     width: calc(100% - 240px - 60px);
 }
 
-
-
-
   .square_block {
+    max-width: 1280px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -537,7 +593,7 @@ a.btn_13:hover {
   }
 
 .squarelast{
-    height: 600px;
+    height: 200px;
 }
 
 
@@ -556,15 +612,13 @@ a.btn_13:hover {
     margin: 0 auto;
 }
 
-.web-img{
-    padding-top: 50px;
-}
 .web-img img{
     width: 100%;
     height: 600px;
     object-fit: contain;
 }
 .web p{
+    padding-top: 50px;
     font-family: 'Playfair Display', serif;
     text-align: center;
     font-size: 1.2rem;
@@ -581,8 +635,8 @@ a.btn_13:hover {
     margin: 0 auto 30px;
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
+    max-width: 1280px;
 }
 .circle{
    
@@ -656,6 +710,21 @@ footer {
 
 @media screen and (max-width: 660px) {
 /*gallery*/
+
+.top-text{
+    max-width: 300px;
+    height: auto;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .95);
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 4px 7px 10px -8px rgba(0, 0, 0, 0.3);
+    line-height: 2;
+}
     .top-text svg {
         position: absolute;
         left: 0;
@@ -736,7 +805,7 @@ footer {
     }
     .index.fixed {
         padding: 0;
-        top: 20vh;
+        top: 7vh;
         position: fixed;
         width: 100%;
         background: #fff;
@@ -746,16 +815,14 @@ footer {
     }
 
     .novel{
-
-
-        margin: 40vh auto;
+        margin:0 auto;
        width: 100%;
     }
 
 
     .square{
         width: calc(50% - 20px);
-        height: 200px;
+        height: 275px;
         margin: 20px 20px 0 0;
         background: rgba(0,0,0,0.1);
         border-radius: 8px;
@@ -779,4 +846,24 @@ footer {
         letter-spacing: 3px;
         margin: 0 auto;
     }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto 30px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+.index{
+    position: absolute;
+    top: 125px;
+    width: 120px;
+    height: 200px;
+    padding: 85px;
+    letter-spacing: 2px;
+}
 }

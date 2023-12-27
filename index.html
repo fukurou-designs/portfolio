@@ -11,6 +11,10 @@
 
         <!-- css -->
         <link rel="stylesheet" href="styles.css">
+        <link href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
@@ -26,7 +30,7 @@
         <header>
             <div class="container">
                 <div class="header-logo">
-                    <h1><a href="index.html">Portfolio</a></h1>
+                    <h1><a href="index.html">TOP</a></h1>
                 </div>
                 
                 <!-- ハンバーガーメニューボタン -->
@@ -41,16 +45,16 @@
                 <nav class="sp-menu menu">
                     <ul>
                         <li><a href="index.html#gallery">GALLERY</a></li>
-                        <li><a href="web.html">WEB</a></li>
-                        <li><a href="print.html">PRINT</a></li>
+                        <li><a href="index.html#web">WEB</a></li>
+                        <li><a href="index.html#graphic">GRAPHIC</a></li>
                     </ul>
                 </nav>
 
                 <nav class="pc-menu menu-left menu">
                     <ul>
                         <li><a href="index.html#gallery">GALLERY</a></li>
-                        <li><a href="web.html">WEB</a></li>
-                        <li><a href="print.html">PRINT</a></li>
+                        <li><a href="index.html#web">WEB</a></li>
+                        <li><a href="index.html#graphic">GRAPHIC</a></li>
                     </ul>
                 </nav>
 
@@ -67,94 +71,487 @@
                     <div class="top-img js-item">
                         <div class="container">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg">                        <defs>                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">                            <stop offset="0%" style="stop-color: rgb(237, 165, 238);"></stop>                            <stop offset="100%" style="stop-color: rgb(239, 98, 159);"></stop>                        </linearGradient>                        </defs>                        <path id="blob" fill="url(#gradient)">                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate>                        </path>                    </svg>
+                            
                             <div class="top-text">
-                                <h2>a.Takahashi</h2>
-                                <h2>Portfolio</h2>
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg">                        <defs>                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">                            <stop offset="0%" style="stop-color: rgb(165, 224, 238);"></stop>                            <stop offset="100%" style="stop-color: rgb(97, 197, 239);"></stop>                        </linearGradient>                        </defs>                        <path id="blob" fill="url(#gradient)">                            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate>                        </path>                    </svg>
+                                <div class="profile">
+                                    <p>Profile</p> 
+                                    <img src="img/profile.jpg">
+
+                                    <p>Arisa Takahashi</p>                               
+                                </div> 
+                               
+                                <p>広告代理店にてwebマーケティングやSEOに触れた後、
+                                    <br>デザイン制作に携わっています。
+                                    <br>海外や時代に沿ったデザインなど、<br>
+                                    変化に対応していけるよう日々勉強中です。
+                                    <br>自身ではECサイトを持ち運営することも目標にしています。</p>
+
                             </div>
+
                             <div class="scrolldown1"><span>Scroll</span></div>
                         </div>
                     </div>
                     <!-- end top画像 -->
 
-                    <div class="item item04 js-item"><span class="js-text"><a href="print.html">PRINT</a></span><span class="jp">グラフィック・印刷関連</span></div>
+                    <!-- <div class="item item04 js-item"><span class="js-text"><a href="print.html">PRINT</a></span><span class="jp">グラフィック・印刷関連</span></div>
                     <div class="item item05 js-item"><span class="js-text"><a href="web.html">WEB</a></span><span class="jp">web開発・デザイン関連</span></div>
                     <div class="item item06 js-item" ><span class="js-text">GALLERY<span class="dli-chevron-down"></span></span><span class="jp">ギャラリー</span></div>
-                    
+                     -->
                     
 
                 </div>
 
             </div>
 
+             <!--print-->
+             <div id="graphic"></div>
+            <h2 class="midashi">
+                PRINTING/GRAPHIC
+                <p>印刷・グラフィック関連</p>
+            </h2>
+                
+            <div class="content">
+                <div class="index">
+                    <li class="para">名刺</li>
+                    <li class="para">ショップカード</li>
+                    <li class="para">はがき・DM</li>
+                    <li class="para">年賀状</li>
+                    <li class="para">チラシ</li>
+                    <li class="para">ロゴ</li>
+                    <li class="para">パッケージ</li>
+                    <li class="para">ノベルティ</li>
+                    <li class="para">（その他web）</li>
+                </div>
+                <div class="novel">
+                    <!-- カード型モジュール -->
+                      <!-- 名刺 -->
+                    <div class="square_block">
+                        <!-- <div class="square">
+                            <img src="img/japanese_english1.png">
+                            <img src="img/japanese_english1_ura.png">
+                            <p>裏面→</p>
+                        </div> -->
+                        <!-- <div class="square">
+                            <img src="img/square_card.jpg">
+                            <img src="img/square_card_ura.jpg">
+                            <p>裏面→</p>
+                        </div> -->
+                        <div class="square">
+                            <img src="img/line_card.png">
+                            <img src="img/line_card_ura.png">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/border_card.png">
+                            <img src="img/border_card_ura.png">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/decolate.png">
+                            <img src="img/decolate2.png">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/black_card.jpg">
+                            <img src="img/black_card_ura.jpg">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/turquoise_card.png">
+                            <img src="img/turquoise_card_ura.png">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/skyblue_tate.jpg">
+                            <img src="img/purple_tate.jpg">
+                            <p>2枚目→</p>
+                        </div>
+
+                        <!-- <div class="square">
+                            <img src="img/pink_card_ura.jpg">
+                            <img src="img/purple_card.jpg">
+                            <p>2枚目→</p>
+                        </div> 
+                        -->
+                    </div>
+
+                       <!-- カード -->
+                    <div class="square_block">
+                        <div class="square">
+                            <img src="img/shop1.jpg">
+                            <img src="img/shop1_ura.jpg">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/shop2.jpg">
+                            <img src="img/shop2_ura.jpg">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/shop3.jpg">
+                            <img src="img/shop3_ura.jpg">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/shop4.jpg">
+                            <img src="img/shop4_ura.jpg">
+                            <p>裏面→</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/shinsatsu.jpg">
+                            <img src="img/shinsatsu_ura.jpg">
+                            <p>裏面→</p>
+                        </div> 
+                        <div class="square">
+                            <img src="img/esthecard.png">
+                            <img src="img/esthe_card.jpg">
+                            <p>2枚目→</p>
+                        </div>                   
+                    </div>
+                       <!-- はがき -->
+                    <div class="square_block">
+                        <div class="square">
+                            <img src="img/postcard.png">
+                            <img src="img/postcard.png">
+                            <p>写真展のDM</p>
+                        </div>
+                    </div>
+
+                      <!-- 年賀 -->
+                    <div class="square_block">
+                        <!-- <div class="square">
+                            <img src="img/nenga1.jpg">
+                            <img src="img/nenga1.jpg">
+                            <p>2022年賀状</p>
+                        </div> -->
+                        <div class="square">
+                            <img src="img/nenga2.jpg">
+                            <img src="img/nenga2.jpg">
+                            <p>2022年賀状</p>
+                        </div>
+                        <!-- <div class="square">
+                            <img src="img/nenga3.jpg">
+                            <img src="img/nenga3.jpg">
+                            <p>2022年賀状</p>
+                        </div> -->
+                        <!-- <div class="square">
+                            <img src="img/nenga4.jpg">
+                            <img src="img/nenga4.jpg">
+                            <p>2022年賀状</p>
+                        </div> -->
+                        <div class="square">
+                            <img src="img/nenga5.jpg">
+                            <img src="img/nenga5.jpg">
+                            <p>2024年賀状</p>
+                        </div>
+                        <!-- <div class="square">
+                            <img src="img/nenga6.jpg">
+                            <img src="img/nenga6.jpg">
+                        </div> -->
+                        <!-- <div class="square">
+                            <img src="img/nenga7.jpg">
+                            <img src="img/nenga7.jpg">
+                        </div> -->
+                        <div class="square">
+                            <img src="img/hans2.jpg">
+                            <img src="img/hans2.jpg">
+                        </div>
+                        <div class="square">
+                            <img src="img/compe_nenga.png">
+                            <img src="img/compe_nenga.png">
+                        </div>
+                    </div>
+
+                      <!-- チラシ -->
+                    <div class="square_block">
+                        <div class="square">
+                            <img src="img/brand1.png">
+                            <img src="img/seagarage.jpg">
+                            <p>カフェオープニングチラシ</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/cafe_poster.jpg">
+                            <img src="img/cafe_poster.jpg">
+                            <p>カフェオープニングチラシ②</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/festival_poster.jpg">
+                            <img src="img/festival_poster.jpg">
+                            <p>映画祭ポスター</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/nail_poster.jpg">
+                            <img src="img/nail_poster.jpg">
+                            <p>ネイルサロンチラシ</p>
+                        </div>
+                        
+                     
+                        <div class="square">
+                            <img src="img/restaurant-poster.jpg">
+                            <img src="img/restaurant-poster.jpg">
+                            <p>レストランチラシ</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/tokyo-trip.jpg">
+                            <img src="img/tokyo-trip2.jpg">
+                            <p>ツアーチラシ</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/menu.jpg">
+                            <img src="img/menu.jpg">
+                            <p>レストランメニュー</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/taxi.jpg">
+                            <img src="img/taxi.jpg">
+                            <p>車両販促チラシ</p>
+                        </div>
+                    </div>
+
+                      <!-- ロゴ -->
+                    <div class="square_block">
+                        <div class="square">
+                            <img src="img/logo1.png">
+                            <img src="img/logo1.png">
+                        </div>
+                       
+                        <!-- <div class="square">
+                            <img src="img/logo3.png">
+                            <img src="img/logo3.png">
+                        </div> -->
+                        <!-- <div class="square">
+                            <img src="img/logo4.png">
+                            <img src="img/logo4.png">
+                        </div> -->
+                        <div class="square">
+                            <img src="img/logo5-1.png">
+                            <img src="img/logo5-2.png">
+                            <p>ヴィンテージショップロゴ</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/logo6-1.png">
+                            <img src="img/logo6-1.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/logo7.png">
+                            <img src="img/logo7.png">
+                            <p>周年提案ロゴ</p>
+                        </div>
+                        <!-- <div class="square"> 
+                            <img src="img/logo8.png">
+                            <img src="img/logo8.png">
+                            <p>周年提案ロゴ</p>
+                        </div>
+                         -->
+                    </div>
+                      <!-- パッケージ -->
+                    <div class="square_block">
+                    
+                        <div class="square">
+                            <img src="img/package1.png">
+                            <img src="img/package1.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/rose.png">
+                            <img src="img/orange.png">
+                        </div>
+                        <!-- <div class="square">
+                            <img src="img/choco_package.png">
+                            <img src="img/choco_package.png">
+                            <p>チョコレートパッケージ</p>
+                        </div> -->
+                    </div>
+                      <!-- ノベルティ -->
+                    <div class="square_block">
+                    
+                        <div class="square">
+                            <img src="img/shirt1.png">
+                            <img src="img/shirt2.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/aroha_pink.png">
+                            <img src="img/aroha_black.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/brown.png">
+                            <img src="img/brown.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/coaster.png">
+                            <img src="img/coaster.png">
+                            <p>バーコースター</p>
+                        </div>
+                    </div>
+
+                     <!-- アイコン -->
+                     <div class="square_block">
+                    
+                        <div class="square">
+                            <img src="img/cafe_icon.jpg">
+                            <img src="img/cafe_icon.jpg">
+                            <p>カフェアイコン集</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/media_icon.png">
+                            <img src="img/media_icon.png">
+                        </div>
+                        <div class="square">
+                            <img src="img/lp.jpg">
+                            <img src="img/lp.jpg">
+                            <p>宣伝LP</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/banner.jpg">
+                            <img src="img/banner.jpg">
+                            <p>宣伝バナー</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/9.jpg">
+                            <img src="img/9.jpg">
+                            <p>9月壁紙</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/10.jpg">
+                            <img src="img/10.jpg">
+                            <p>10月壁紙</p>
+                        </div>
+                        <div class="square">
+                            <img src="img/11.jpg">
+                            <img src="img/11.jpg">
+                            <p>11月壁紙</p>
+                        </div>
+                    </div>
+
+                    <div class="square_block">
+                    
+                        <div class="squarelast"></div>
+                        
+                    </div>
+                 
+                </div>
+            </div>
             
+            <!--web-->
+            <div id="web"></div>
+            <div class="web">
+                <p>- WEBデザイン・コーディング関連 -</p>
+                <h2>Portfolio WEB▼</h2>
+                <div class="web-img"><img src="img/web/web.png"></div>
+                
+            </div>
+    
+               <div class="web-gallery">
+                <div class="flex-container">
+                   
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/teeshop.png">
+                        <div class="dark-cover">
+                            <p><a href="https://teeshop.tee-design.jp/" target="_blank">ECサイト</a></p>
+                        </div>
+                    </div>
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/karen.png">
+                        <div class="dark-cover">
+                            <p><a href="https://karen-tee.com/" target="_blank">不動産会社コーポレートサイト<br>(社内意向でpcのみ)</a></p>
+                        </div>
+                    </div>
+
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/teedesign.png">
+                        <div class="dark-cover">
+                            <p><a href="https://tee-design.jp/" target="_blank">制作会社コーポレートサイト</a></p>
+                        </div>
+                    </div>
+
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/img1.png"> 
+                        <div class="dark-cover">
+                            <p><a href="http://cf557957.cloudfree.jp/ " target="_blank">ハンバーガー店のWEBサイト<br>(レスポンシブ)</a></p>
+                        </div>    
+                    </div>
+
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/img2.png">
+                        <div class="dark-cover">
+                            <p><a href="http://cpsite2.html.xdomain.jp/" target="_blank">海運会社のコーポレートサイト<br>(レスポンシブ)</a></p>
+                        </div>  
+                    </div>
+
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/img3.png">
+                        <div class="dark-cover">
+                            <p><a href="http://cpsite2.php.xdomain.jp/" target="_blank">化粧品ECデモサイト<br>(PHP/カート機能実装)<br>(レスポンシブ)</a></p>
+                        </div>
+                    </div>
+
+                    <div class="cover-box">
+                        <img class="circle" src="img/web/dragon-cafe.png">
+                        <div class="dark-cover">
+                            <p><a href="https://fukurou-designs.github.io/dragon-cafe/" target="_blank">カフェデモサイト</a></p>
+                        </div>
+                    </div>
+                </div>
+               </div>
              <!--gallery-->
 
-             <div id="gallery"></div>   
-                
+             <div id="gallery"></div> 
+             <div class="gallery">
+                <p>- ブランディング制作まとめ -</p>
+                <h2>Gallery▼</h2>
+             </div>  
+             
              <div class="brand-wrapper">
-                
-                <div class="gallery-category">
-                   <!-- <div class="img-flex"> -->
-                    <img src="branding/brand1.jpg"> 
-                    <!-- <img src="branding/brand_cafe.png">
-                    </div>  -->
-                    <!-- <input id="block-01" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-01"><li class=""><a href="#" class="gallery-text"><span >BRAND 01</span></a></li></label>  -->
+
+                <div class="gallery-category"> 
+                    <img src="branding/brand4.png">  
+                    <input id="block-01" type="checkbox" class="gallery-toggle"> 
+                    <label class="Label" for="block-01"><li class="gallery-text"><span >①海運会社コーポレートサイトの制作コーディング</span></li></label>
                     <div class="brand-content">
+                        <img src="branding/corporate.png" width="100%">
+                        <p>事務用品とロゴイメージ</p>
+                        <p><a href="http://cpsite2.html.xdomain.jp/" target="_blank" class="btn_13">海運会社コーポレートサイトURL</a></p>
                     </div>
                 </div>
 
                 <div class="gallery-category">
-                    <img src="branding/brand2.jpg">  
+                    <img src="branding/brand2.png">  
                     <input id="block-02" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-02"><li class="gallery-text"><span >②化粧品関連のECサイト制作/パッケージデザイン</span></li></label>
+                    <label class="Label" for="block-02"><li class="gallery-text"><span >②化粧品関連のECサイト制作コーディング / パッケージデザイン</span></li></label>
                     <div class="brand-content">
                         <p>下層ページ制作途中</p>
-                       
-                        <img src="branding/cosme.png" style="width: 65%;">
                         <img src="branding/cosme2.png">
+                        <img src="branding/cosme.png">
                         
-
                         <img src="branding/cosme3.png">
-                        <img src="branding/cosme4.png">
+                        <!-- <img src="branding/cosme4.png"> -->
                        
-                        <p><a href="http://cpsite2.php.xdomain.jp/" target="_blank" class="btn_13">化粧品デモサイトはこちらより</a></p>
+                        <p><a href="http://cpsite2.php.xdomain.jp/" target="_blank" class="btn_13">化粧品デモサイトURL</a></p>
                         <p style="font-size: 0.9rem;">フルスクラッチ開発中<br>(PHP/カート機能実装)</p>
 
                     </div>
                 </div>
 
                 <div class="gallery-category"> 
-                    <img src="branding/brand3.jpg">  
+                    <img src="branding/brand3.png">  
                     <input id="block-03" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-03"><li class="gallery-text"><span >③アロマ関連のECデザイン/ブランドグッズ制作</span></li></label>
+                    <label class="Label" for="block-03"><li class="gallery-text"><span >③アロマ関連のECデザイン + 商品パッケージ</span></li></label>
                     <div class="brand-content">
                         
                         <img src="branding/aroma.png">
                         <p>Figmaを使用したwebデザイン</p>
                        
-                        <img src="branding/aroma1.jpg" style="width: 65%;">
-                        <img src="branding/aroma2.jpg" style="width: 65%;">
+                        <img src="branding/aroma1.jpg" >
+                        <img src="branding/aroma2.jpg">
                         
                     </div>
                 </div>
 
-                <div class="gallery-category"> 
-                    <img src="branding/brand4.jpg">  
-                    <input id="block-04" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-04"><li class="gallery-text"><span >④レスポンシブ対応 海運会社コーポレートサイトの制作</span></li></label>
-                    <div class="brand-content">
-                        <img src="branding/corporate.png" width="100%">
-                        <p>事務用品とロゴイメージ</p>
-                        <p><a href="http://cpsite2.html.xdomain.jp/" target="_blank" class="btn_13">海運会社コーポレートサイトはこちら</a></p>
-                    </div>
-                </div>
+                
 
                 <div class="gallery-category"> 
-                    <img src="branding/brand5.jpg">  
-                    <input id="block-05" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-05"><li class="gallery-text"><span >⑤ハンバーガー店のWEBサイト制作+ブランドグッズ制作</span></li></label>
+                    <img src="branding/brand5.png">  
+                    <input id="block-04" type="checkbox" class="gallery-toggle"> 
+                    <label class="Label" for="block-04"><li class="gallery-text"><span >④ハンバーガー店のWEBサイト制作コーディング</span></li></label>
                     <div class="brand-content">
                         <div class="img-flex">
                             <img src="branding/burger_black.jpg">
@@ -173,16 +570,16 @@
                             
                         </div>
                         <p>ショップ備品イメージ</p>
-                        <p><a href="http://cf557957.cloudfree.jp" target="_blank" class="btn_13">ハンバーガー店のWEBサイトはこちら</a></p>
+                        <p><a href="http://cf557957.cloudfree.jp" target="_blank" class="btn_13">ハンバーガー店のWEBサイト</a></p>
                     </div>
                 </div>
 
                 <div class="gallery-category"> 
-                    <img src="branding/brand6.jpg">  
-                    <input id="block-06" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-06"><li class="gallery-text"><span >⑥カフェのWEBサイトデザイン</span></li></label>
+                    <img src="branding/brand6.png">  
+                    <input id="block-05" type="checkbox" class="gallery-toggle"> 
+                    <label class="Label" for="block-05"><li class="gallery-text"><span >⑤カフェのWEBサイトデザイン + グッズ</span></li></label>
                     <div class="brand-content">
-                        <p>フォトショップで制作<p>
+                        <p>Photoshopで作成<p>
                        
                         <img src="branding/brand-cafe.jpg">
                         <img src="branding/brand-cafe2.jpg">
@@ -193,10 +590,10 @@
 
                 <div class="gallery-category"> 
                     <img src="branding/cookie-img.jpg">  
-                    <input id="block-07" type="checkbox" class="gallery-toggle"> 
-                    <label class="Label" for="block-07"><li class="gallery-text"><span >⑦洋菓子販売店LP模写</span></li></label>
+                    <input id="block-06" type="checkbox" class="gallery-toggle"> 
+                    <label class="Label" for="block-06"><li class="gallery-text"><span >⑥洋菓子販売店LP模写</span></li></label>
                     <div class="brand-content">
-                       
+                        <p>PhotoshopとIllustratorで作成<p>
                       
                         <img src="branding/cookie-lp.jpg" style="width: 65%;">
                         <img src="branding/cookie-lp2.jpg"style="width: 65%;">
@@ -207,10 +604,14 @@
                 <div style="margin-top: 66px;"></div>
             </div>    
 
+            <div class="gallery">
+                <p class="web-midashi">- その他入選 -</p>
+             </div> 
             <div class="gallery-nenga">
+                
                 <div class="compe-nenga">
                     <img src="branding/reiwalogo.gif" width="229px" height="45px">
-                    <p>れいわdeねんが様での掲載+商品化はがきデザイン</p>
+                    <p class="web-midashi2">れいわdeねんが様での掲載+商品化はがきデザイン</p>
                     <div class="img-flex">
                         <img src="branding/compe_nenga.png">
                         <img src="branding/compe_nenga2.JPG">
@@ -218,7 +619,7 @@
                 </div>
                 <div class="compe-nenga">
                     <img src="branding/hanslogo.png" width="190px" height="70px">
-                    <p> <a href="https://printing-service.jp/vote/#detail/57/%E3%81%82%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AF%E3%80%8C%E4%BC%9D%E8%AA%AC%E3%81%AE%E8%BE%B0%E3%81%A8%E5%92%8C%E3%81%AE%E8%B1%A1%E5%BE%B4%E3%80%8D%E3%80%82%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88%E3%81%AF%E5%B9%BB%E3%81%A8%E7%8F%BE%E5%AE%9F%E3%81%AE%E5%92%8C%E9%A2%A8%E6%99%AF%E3%81%A7%E3%81%99%E3%80%82%E8%83%8C%E6%99%AF%E3%81%AF%E9%9A%9C%E5%AD%90%E3%82%84%E5%B1%8F%E9%A2%A8%E3%82%92%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%97%E3%80%81%E6%B0%B4%E5%BD%A9%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%92%E7%B4%B0%E3%81%8B%E3%81%8F%E5%8F%96%E3%82%8A%E5%85%A5%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E6%98%94%E3%81%AA%E3%81%8C%E3%82%89%E3%81%AE%E5%92%8C%E3%81%AE%E9%A2%A8%E6%99%AF%E3%82%92%E5%B9%B3%E5%92%8C%E7%9A%84%E3%81%AB%E5%84%AA%E3%81%97%E3%81%8F%E8%A1%A8%E7%8F%BE%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82">東急ハンズ様一次選考通過はがきデザイン</a></p>
+                    <p class="web-midashi2"> <a href="https://printing-service.jp/vote/#detail/57/%E3%81%82%E3%82%8A%E3%81%A1%E3%82%83%E3%82%93/%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AF%E3%80%8C%E4%BC%9D%E8%AA%AC%E3%81%AE%E8%BE%B0%E3%81%A8%E5%92%8C%E3%81%AE%E8%B1%A1%E5%BE%B4%E3%80%8D%E3%80%82%E3%82%B3%E3%83%B3%E3%82%BB%E3%83%97%E3%83%88%E3%81%AF%E5%B9%BB%E3%81%A8%E7%8F%BE%E5%AE%9F%E3%81%AE%E5%92%8C%E9%A2%A8%E6%99%AF%E3%81%A7%E3%81%99%E3%80%82%E8%83%8C%E6%99%AF%E3%81%AF%E9%9A%9C%E5%AD%90%E3%82%84%E5%B1%8F%E9%A2%A8%E3%82%92%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%97%E3%80%81%E6%B0%B4%E5%BD%A9%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%92%E7%B4%B0%E3%81%8B%E3%81%8F%E5%8F%96%E3%82%8A%E5%85%A5%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%E6%98%94%E3%81%AA%E3%81%8C%E3%82%89%E3%81%AE%E5%92%8C%E3%81%AE%E9%A2%A8%E6%99%AF%E3%82%92%E5%B9%B3%E5%92%8C%E7%9A%84%E3%81%AB%E5%84%AA%E3%81%97%E3%81%8F%E8%A1%A8%E7%8F%BE%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82">東急ハンズ様一次選考通過はがき</a></p>
                     <div class="img-flex">
                         <img src="branding/hans2.jpg">
                         <img src="branding/hans.png">
@@ -237,7 +638,8 @@
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/print.js"></script>
+        <script src="js/scroll.js"></script>
  
         <script>
             $(function(){
