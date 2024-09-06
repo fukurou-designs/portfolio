@@ -442,12 +442,15 @@ margin:0 auto ;
 	transition: all .3s;
     background-color:#efefef;
 }
-
-.brand-content img:hover{
+.img-hover:hover{
+    transform:scale(1.2);
+    transition:0.3s;
+}
+/* .brand-content img:hover{
     transform:scale(1.2);
     transition:0.3s;
 
-}
+} */
 .gallery-toggle:checked + .Label::before {
 	transform: rotate(-45deg) !important;
 }
