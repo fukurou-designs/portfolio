@@ -606,11 +606,11 @@ a.btn_13:hover {
     transition: opacity .7s;
   }
 
-  /* .square:hover img {
+  .square:hover img {
     opacity: 1;
-    transform:scale(1.3);
+    /* transform:scale(1.3); */
     transition:0.3s;
-  } */
+  }
 
 .squarelast{
     height: 200px;
