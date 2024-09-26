@@ -506,6 +506,9 @@ a.btn_13:hover {
     text-align: left; font-weight: bold;
 }
 
+.brand-description p{
+    font-size: .9rem;
+}
 
 /*print.html*/
 .midashi{
@@ -674,6 +677,7 @@ a.btn_13:hover {
     max-height: 85%;
     height: 90%;
     object-fit: contain;
+    
   }
   
   
@@ -1032,6 +1036,11 @@ footer {
         position: relative;
         transition: 0.5s;
     }
+
+    .brand-description p{
+        font-size: .75rem;
+    }
+
     /*print.html*/
     .item{
         height: 100vh;
@@ -1109,7 +1118,7 @@ footer {
         padding: 1.1rem;
         background-color: #fff;
         border-radius: 0 0 8px 8px;
-        height: 60px;
+        height: 45px;
         width:auto;
         padding: 1rem 1rem 2rem 1rem;
       }
