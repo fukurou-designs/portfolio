@@ -184,7 +184,9 @@ header {
     width: 120px;
     height: 120px;
 }
-
+.profile-pc{
+    font-size: .9rem;
+}
 .area{
     overflow: hidden;
   }
@@ -380,7 +382,7 @@ margin:0 auto ;
 /* labelベース*/
 .brand-wrapper{
     width: 100%;
-    margin-bottom: 300px;
+    margin-bottom: 230px;
 }
 .gallery-toggle {
 	display: none;
@@ -684,7 +686,7 @@ a.btn_13:hover {
 
 /* web.html */
 .web{
-    height: 90vh;
+    height: 60vh;
     background-color: antiquewhite;
 }
 
@@ -711,7 +713,7 @@ a.btn_13:hover {
 }
 .web-gallery{
     padding-top: 96px;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
 }
 .flex-container{
     display: flex;
@@ -785,10 +787,15 @@ a.btn_13:hover {
     margin:0 auto;
   }
   
+  .border_gallery_top {
+    border-top: dashed 1px rgb(200, 200, 200);
+    width: 100%;
+    margin:0 auto ;
+  }
   .border_gallery {
     border-top: dashed 1px rgb(200, 200, 200);
-    width: 80%;
-    margin:120px auto 0;
+    width: 100%;
+    margin:0 auto;
   }
   .hr{
     width: 30% ;
