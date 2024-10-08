@@ -36,7 +36,7 @@ html {
 
 }
 .container svg{
-    width: 70%;
+    width: 55%;
 }
 a:hover {
     opacity: 0.6;
@@ -127,7 +127,7 @@ header {
     background-size: cover;
     background-position: center */
     position: relative;
-    background:linear-gradient(45deg, #3bade3,#9844b7,#f781fd);
+    background:linear-gradient(45deg, #e8e8e8, #c28ad7, #bb5eb5);
     /* background:#333; */
 	background-size: 200% 200%;
 	animation: bggradient 15s ease infinite;
