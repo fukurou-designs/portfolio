@@ -226,7 +226,7 @@ header {
 .scrolldown1 span{
 
   position: absolute;
-  left:-55px;
+  left:-70px;
   top: -8px;
   color: #eee;
   font-size: 0.7rem;
@@ -751,7 +751,7 @@ a.btn_13:hover {
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -809,7 +809,7 @@ a.btn_13:hover {
     text-align: left;
     padding: 20px 40px 40px;
     font-size: .75rem;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     width: 65%;
   }
 
