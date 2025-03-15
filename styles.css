@@ -607,7 +607,9 @@ a.btn_13:hover {
     font-size: .8em;
     line-height: 2;
 }
-
+.para a{
+        color: inherit;
+}
 .para.active{      
     color: rgb(0, 0, 0);
     /*background: rgb(37, 180, 251);*/
@@ -1194,7 +1196,7 @@ width: 50%;
     }
     .index.fixed {
         padding: 0;
-        top: 7vh;
+        top: 6.5vh;
         position: fixed;
         width: 100%;
         background: #fff;
