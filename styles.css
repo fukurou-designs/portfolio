@@ -346,6 +346,14 @@ left: -10px;
 }
 
 /*gallery*/
+.felix-gallery{
+    display: flex;
+    margin:40px 0;
+}
+.felix-img{
+    width: 50%;
+}
+
 .compe-nenga img{
  margin: 0 auto;
 }
