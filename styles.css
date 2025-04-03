@@ -16,7 +16,9 @@ article,footer, header, menu, nav, section {
 }
 
 /* 共通CSS */
-
+body{
+    color: #333;
+}
 html {
     font-family: sans-serif;
     min-height: 100%;
