@@ -572,9 +572,13 @@ a.btn_13:hover {
     text-align: left; font-weight: bold;
 }
 
+.brand-project{
+    padding: 0 30px;
+}
 .brand-description p{
     font-size: .9rem;
 }
+
 
 /*print.html*/
 .midashi{
@@ -870,7 +874,7 @@ a.btn_13:hover {
     margin:15px auto 0;
   } 
 
-
+  
   .marketing-project{
     background-color: #efefef;
     text-align: left;
