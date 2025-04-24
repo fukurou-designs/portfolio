@@ -884,6 +884,23 @@ a.btn_13:hover {
     width: 65%;
   }
 
+  .figma-iframe{
+    position: relative;
+    left: 5%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+   
+  }
+  .figma-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    
+  }
 
 /* footer */
 footer {
@@ -979,6 +996,8 @@ footer {
         position: relative;
         
       }
+
+    
 
 }
 
@@ -1294,6 +1313,8 @@ width: 50%;
         justify-content: center;
         
     }
+
+ 
 }
 
 @media screen and (min-width: 1440px) {
