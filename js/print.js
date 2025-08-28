@@ -26,6 +26,7 @@ window.addEventListener("scroll", function(){
         }else {
             novelP[i].classList.remove("active");
             para[i].classList.remove("active");
+             debugger;
         }           
     }     
 })
