@@ -893,7 +893,7 @@ a.btn_13:hover {
     margin-bottom: 30px;
    
   }
-  .figma-iframe iframe {
+  .figma-iframe img, .figma-iframe iframe {
     position: absolute;
     top: 0;
     left: 0;
