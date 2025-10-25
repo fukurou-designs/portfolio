@@ -750,6 +750,7 @@ a.btn_13:hover {
     max-height: 85%;
     height: 90%;
     object-fit: contain;
+     pointer-events: none;
     
   }
   
